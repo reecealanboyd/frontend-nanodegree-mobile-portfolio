@@ -1,5 +1,14 @@
 ## Website Performance Optimization portfolio project
 
+My task in this project was to accomplish the criteria listed at https://review.udacity.com/#!/rubrics/16/view
+
+PageSpeed Score for this site: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Freecealanboyd.github.io%2Ffrontend-nanodegree-mobile-portfolio
+
+I made views/pizza.html render with a consistent frame rate of 60 fps when scrolling and I made the time to resize pizzas less than 5 ms.
+
+Below is a description of this project as provided by Udacity. 
+
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository and inspect the code.

@@ -424,6 +424,8 @@ var resizePizzas = function(size) {
 
 
   // Iterates through pizza elements on the page and changes their widths
+
+// To optimize this, I removed the determineDx function and brought it's switch case into the changePizzaSizes function
 function changePizzaSizes(size) {
         switch(size) {
         case "1":
@@ -438,6 +440,9 @@ function changePizzaSizes(size) {
         default:
           console.log("bug in sizeSwitcher");
       }
+
+  // before, this function make 4 calls to document.querySelectorAll in every iteration of the for loop
+  // Now it only makes 1 for the entire duration of the function
   var randomPizzaContainer = document.querySelectorAll(".randomPizzaContainer");
     for (var i = 0; i < randomPizzaContainer.length; i++) {
       randomPizzaContainer[i].style.width = newWidth + "%";
